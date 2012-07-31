@@ -1,0 +1,13 @@
+<h1>List of all Polls</h1>
+
+<%= link_to "New Poll", :controller => "polls", :action => "new" %>
+
+<% @polls.each do |poll|%>
+
+<ul>
+  <li>
+    <%= poll.title %>
+  <li>
+    <%= poll.description %>
+  </ul>
+<% end %>
